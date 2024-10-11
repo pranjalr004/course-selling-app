@@ -1,13 +1,11 @@
 const express=require('express')
 const {userRouter}=require("./routes/user")
-const {createCourseRoutes}=require("./routes/course")
+const {courseRouter}=require("./routes/course")
 const app=express()
 
-createUserRoutes(app)
-createCourseRoutes(app)
 
 
-app.use("/user",userRouter)
-app.use("/course",courseRouter)
+app.use("/api/v1/user",userRouter)
+app.use("/api/v1/course",courseRouter)
 
 app.listen(3000)
