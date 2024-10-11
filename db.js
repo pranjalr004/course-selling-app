@@ -1,7 +1,7 @@
 const mongoose=require('mongoose')
 const admin = require('./routes/admin')
 console.log("Connected to ")
-mongoose.connect("mongodb+srv://pranjalsstudio04:QEGRh3xX7HMOoPHD@cluster0.idmrc.mongodb.net/Coursera-app")
+
 const Schema=mongoose.Schema
 const ObjectId=mongoose.Types.ObjectId
 
