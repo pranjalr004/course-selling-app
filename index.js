@@ -1,39 +1,13 @@
 const express=require('express')
+const {userRouter}=require("./routes/user")
+const {createCourseRoutes}=require("./routes/course")
 const app=express()
 
-app.post("/user/signup",function(req,res){
-    res.json({
-        message:"singup endpoint"
-    })
-})
+createUserRoutes(app)
+createCourseRoutes(app)
 
 
-app.post("/user/signin",function(req,res){
-    res.json({
-        message:"singup endpoint"
-    })
-})
-
-
-app.get("/user/purchases",function(req,res){
-    res.json({
-        message:"singup endpoint"
-    })
-})
-
-
-app.post("/course/purchase",function(req,res){
-    res.json({
-        message:"singup endpoint"
-    })
-})
-
-
-app.get("/courses",function(req,res){
-    res.json({
-        message:"singup endpoint"
-    })
-})
-
+app.use("/user",userRouter)
+app.use("/course",courseRouter)
 
 app.listen(3000)
