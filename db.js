@@ -1,7 +1,4 @@
 const mongoose=require('mongoose')
-const admin = require('./routes/admin')
-console.log("Connected to ")
-
 const Schema=mongoose.Schema
 const ObjectId=mongoose.Types.ObjectId
 
