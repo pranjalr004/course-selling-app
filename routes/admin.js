@@ -61,7 +61,7 @@ adminRouter.post("/signin",async function(req,res){
     })
 
 
-    adminRouter.put("/",function(req,res){
+    adminRouter.put("/course",function(req,res){
         res.json({
             message:"signup endpoint"
         })
@@ -70,7 +70,7 @@ adminRouter.post("/signin",async function(req,res){
 
 
 
-adminRouter.get("/bulk",function(req,res){
+adminRouter.get("/course/bulk",function(req,res){
     res.json({
         message:"signup endpoint"
     })
